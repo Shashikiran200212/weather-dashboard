@@ -1,0 +1,87 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+.main-container{
+    margin: 0;
+    min-height: 100vh;
+    background-color: #252525;
+    color : #fff;
+}
+.nav-styling{
+    background-color: white;
+    text-align: center;
+    color: #252525;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 25px;
+}
+.lower-contaioner{
+    padding: 30px;
+    display: flex;
+    width: 100%;
+}
+@media (max-width:728px){
+    .lower-contaioner{
+        flex-direction: column;
+    }
+}
+.details-container{ width: 30%; display: flex; flex-direction: column; }
+.input-styling, .search-button-styling, .current-location-button{
+    border-radius: 4px; border: none; height: 40px; margin: 10px; font-weight: bold; color: black;
+}
+.input-styling{ padding-left:10px; }
+.search-button-styling{
+    background-color: rgba(48, 48, 238, 0.702); color: #fff;
+}
+.current-location-button{
+    background-color: rgb(93, 93, 103); color: #fff;
+}
+.line-container{ display: flex; align-items:center; color: #fff; }
+.line-container hr{ border: 1px solid rgb(213, 213, 223); flex: 1; }
+.weather-data-container{ width:65%; margin-left:10px; }
+.city-details-container{
+    background-color: rgb(189, 187, 187);
+    border-radius: 8px;
+    color: #252525;
+    padding: 20px;
+}
+.city-heading-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.city-heading{
+    font-size: 22px;
+    font-family: "Bree Serif";
+    font-weight: 700;
+    color: #252525;
+}
+.forecast-heading-element{
+    color: #000;
+    font-family: "Bree Serif";
+    font-weight: 600;
+    margin-top: 20px;
+    color: white;
+}
+.forecast-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.eachdayForecast{
+    background-color: grey;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 20px;
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+.error-message{
+    color: rgba(243, 6, 6, 0.812);
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}

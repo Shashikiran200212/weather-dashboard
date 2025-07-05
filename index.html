@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>weather Dashboard</title>
+    <link rel="icon">
+    <script src="https://kit.fontawesome.com/a8d1648084.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <div class="main-container">
+    <nav class="nav-styling">Weather Dashboard</nav>
+    <div class="lower-contaioner">
+      <div class="details-container">
+        <p class="city-name-styling">Enter a City Name</p>
+        <input type="text" class="input-styling" id="inputData" placeholder="e.g. London"/>
+        <button class="search-button-styling" id="searchButton">Search</button>
+        <div class="line-container"><hr/><span style="padding:0 10px;">or</span><hr/></div>
+        <button class="current-location-button" id="locationButton">Use Current Location</button>
+      </div>
+      <div class="weather-data-container" id="weatherDataContainer"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
